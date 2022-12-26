@@ -9,6 +9,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
 import { CourseComponent } from './courses/course/course.component';
+import { FormsModule } from '@angular/forms';
 
 const appRoute: Routes = [
   { path: '', component: HomeComponent }, //default route
@@ -31,7 +32,7 @@ const appRoute: Routes = [
     ErrorComponent,
     CourseComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoute)],
+  imports: [BrowserModule,FormsModule, RouterModule.forRoot(appRoute)],
   providers: [],
   bootstrap: [AppComponent],
 })
